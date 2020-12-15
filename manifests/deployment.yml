@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: lgoyalsimpleapp 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: lgoyalsimpleapp
+  template:
+    metadata:
+      labels:
+        app: lgoyalsimpleapp 
+    spec:
+      containers:
+        - name: lgoyalsimpleapp 
+          image: acrdemopoc.azurecr.io/lgoyalsimpleapp
+          ports:
+          - containerPort: 80
