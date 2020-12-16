@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: lgoyalsimpleapp 
-          image: acrdemopoc.azurecr.io/lgoyalsimpleapp
+          image: acrdemopoc.azurecr.io/simpleappdev
           ports:
           - containerPort: 80
